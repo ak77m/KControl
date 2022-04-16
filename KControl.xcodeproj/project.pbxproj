@@ -1,0 +1,748 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF0C1EF92805A85400C2C566 /* Telnet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0C1EF82805A85400C2C566 /* Telnet.swift */; };
+		FF0C1EFA2805A85400C2C566 /* Telnet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0C1EF82805A85400C2C566 /* Telnet.swift */; };
+		FF0C1EFE2805B82600C2C566 /* HostInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0C1EFD2805B82600C2C566 /* HostInfo.swift */; };
+		FF0C1EFF2805B82600C2C566 /* HostInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0C1EFD2805B82600C2C566 /* HostInfo.swift */; };
+		FF0C1F0128071A4B00C2C566 /* Logs.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0C1F0028071A4B00C2C566 /* Logs.swift */; };
+		FF0C1F0228071A4B00C2C566 /* Logs.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0C1F0028071A4B00C2C566 /* Logs.swift */; };
+		FF0C1F0428071A7000C2C566 /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0C1F0328071A7000C2C566 /* LogManager.swift */; };
+		FF0C1F0528071A7000C2C566 /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0C1F0328071A7000C2C566 /* LogManager.swift */; };
+		FF0C477E27EF168300DC4C59 /* ConfigImport.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0C477D27EF168300DC4C59 /* ConfigImport.swift */; };
+		FF0C477F27EF168300DC4C59 /* ConfigImport.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0C477D27EF168300DC4C59 /* ConfigImport.swift */; };
+		FF0C478127F0BD2900DC4C59 /* ListStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0C478027F0BD2900DC4C59 /* ListStorage.swift */; };
+		FF0C478227F0BD2900DC4C59 /* ListStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0C478027F0BD2900DC4C59 /* ListStorage.swift */; };
+		FF25CF9C27EA10F60094D831 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF25CF9B27EA10F60094D831 /* Assets.xcassets */; };
+		FF25CF9D27EA10F60094D831 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF25CF9B27EA10F60094D831 /* Assets.xcassets */; };
+		FF25CF9F27EA14A30094D831 /* ListOfButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF25CF9E27EA14A30094D831 /* ListOfButtons.swift */; };
+		FF25CFA127EA15240094D831 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF614A2427E49F9000BFE900 /* ButtonView.swift */; };
+		FF349FB427EA530F0072931A /* NewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF349FB327EA530F0072931A /* NewButton.swift */; };
+		FF614A0A27E49EA500BFE900 /* KControlApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6149FA27E49EA300BFE900 /* KControlApp.swift */; };
+		FF614A0B27E49EA500BFE900 /* KControlApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6149FA27E49EA300BFE900 /* KControlApp.swift */; };
+		FF614A1A27E49ECE00BFE900 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF614A1827E49ECE00BFE900 /* MainView.swift */; };
+		FF614A1D27E49EFC00BFE900 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF614A1C27E49EFC00BFE900 /* Requests.swift */; };
+		FF614A1E27E49EFC00BFE900 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF614A1C27E49EFC00BFE900 /* Requests.swift */; };
+		FF614A2127E49F2500BFE900 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF614A2027E49F2500BFE900 /* Manager.swift */; };
+		FF614A2227E49F2500BFE900 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF614A2027E49F2500BFE900 /* Manager.swift */; };
+		FF614A2627E49F9000BFE900 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF614A2427E49F9000BFE900 /* ButtonView.swift */; };
+		FF614A2827E4A25700BFE900 /* KButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF614A2727E4A25700BFE900 /* KButtonStyle.swift */; };
+		FF614A2927E4A25700BFE900 /* KButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF614A2727E4A25700BFE900 /* KButtonStyle.swift */; };
+		FF614A2F27E5207800BFE900 /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF614A2D27E5207800BFE900 /* ControlView.swift */; };
+		FF614A3227E5236300BFE900 /* NewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF614A3027E5236300BFE900 /* NewButton.swift */; };
+		FF614A3727E52E0D00BFE900 /* ListOfButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF614A3527E52E0D00BFE900 /* ListOfButtons.swift */; };
+		FF614A3A27E531CB00BFE900 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF614A3827E531CB00BFE900 /* SettingsView.swift */; };
+		FF614A4127E5CE7E00BFE900 /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF614A4027E5CE7E00BFE900 /* Modifiers.swift */; };
+		FF614A4227E5CE7E00BFE900 /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF614A4027E5CE7E00BFE900 /* Modifiers.swift */; };
+		FF614A4527E67AAD00BFE900 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF614A4427E67AAD00BFE900 /* Color.swift */; };
+		FF614A4627E67AAD00BFE900 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF614A4427E67AAD00BFE900 /* Color.swift */; };
+		FF88A75527F850BF00A3AA7C /* ViaCommands.txt in Resources */ = {isa = PBXBuildFile; fileRef = FF88A75427F850BF00A3AA7C /* ViaCommands.txt */; };
+		FF88A75627F850BF00A3AA7C /* ViaCommands.txt in Resources */ = {isa = PBXBuildFile; fileRef = FF88A75427F850BF00A3AA7C /* ViaCommands.txt */; };
+		FF88A75827F871D100A3AA7C /* PowerManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF88A75727F871D100A3AA7C /* PowerManagerView.swift */; };
+		FF88A75A27F873F800A3AA7C /* WindowButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF88A75927F873F800A3AA7C /* WindowButtons.swift */; };
+		FF88A75B27F873F800A3AA7C /* WindowButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF88A75927F873F800A3AA7C /* WindowButtons.swift */; };
+		FF88A75D27F878EE00A3AA7C /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF88A75C27F878EE00A3AA7C /* TextField.swift */; };
+		FF88A75E27F878EE00A3AA7C /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF88A75C27F878EE00A3AA7C /* TextField.swift */; };
+		FF88A76127F8AA4F00A3AA7C /* ViaCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF88A76027F8AA4F00A3AA7C /* ViaCommand.swift */; };
+		FF88A76227F8AA4F00A3AA7C /* ViaCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF88A76027F8AA4F00A3AA7C /* ViaCommand.swift */; };
+		FF8BCE6C280AA98F00A6B75B /* ViaBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8BCE6B280AA98F00A6B75B /* ViaBottomView.swift */; };
+		FF94077A280984A000A14E87 /* LogStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF940779280984A000A14E87 /* LogStruct.swift */; };
+		FF94077B280984A000A14E87 /* LogStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF940779280984A000A14E87 /* LogStruct.swift */; };
+		FFCD556B27F39C0F008D84E9 /* ViaTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCD556A27F39C0F008D84E9 /* ViaTopView.swift */; };
+		FFCD556D27F39D17008D84E9 /* ViaButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCD556C27F39D17008D84E9 /* ViaButtonStyle.swift */; };
+		FFCD556F27F49B6C008D84E9 /* TelnetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCD556E27F49B6C008D84E9 /* TelnetManager.swift */; };
+		FFCD557027F49B6C008D84E9 /* TelnetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCD556E27F49B6C008D84E9 /* TelnetManager.swift */; };
+		FFCD557227F49C8D008D84E9 /* ListOfViaButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCD557127F49C8D008D84E9 /* ListOfViaButtons.swift */; };
+		FFCD557427F49FB2008D84E9 /* ViaButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCD557327F49FB2008D84E9 /* ViaButtonView.swift */; };
+		FFCD557527F49FB2008D84E9 /* ViaButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCD557327F49FB2008D84E9 /* ViaButtonView.swift */; };
+		FFCD557827F4A11A008D84E9 /* NewViaButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCD557627F4A11A008D84E9 /* NewViaButtonView.swift */; };
+		FFCD557C27F4DEF4008D84E9 /* ViaButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCD556C27F39D17008D84E9 /* ViaButtonStyle.swift */; };
+		FFF9809A27E6A18500B3F5F0 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = FFF9809927E6A18500B3F5F0 /* .gitignore */; };
+		FFF9809B27E6A18500B3F5F0 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = FFF9809927E6A18500B3F5F0 /* .gitignore */; };
+		FFF9809D27E90AFC00B3F5F0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF9809C27E90AFC00B3F5F0 /* NetworkManager.swift */; };
+		FFF9809E27E90AFC00B3F5F0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF9809C27E90AFC00B3F5F0 /* NetworkManager.swift */; };
+		FFF980A127E9C19700B3F5F0 /* BottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF9809F27E9C19700B3F5F0 /* BottomView.swift */; };
+		FFF980AE27EA09FD00B3F5F0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF980AD27EA09FD00B3F5F0 /* MainView.swift */; };
+		FFF980B027EA0A6100B3F5F0 /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF980AF27EA0A6100B3F5F0 /* SetupView.swift */; };
+		FFF980B427EA0AC000B3F5F0 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF980B327EA0AC000B3F5F0 /* InfoView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FF0C1EF82805A85400C2C566 /* Telnet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Telnet.swift; sourceTree = "<group>"; };
+		FF0C1EFD2805B82600C2C566 /* HostInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostInfo.swift; sourceTree = "<group>"; };
+		FF0C1F0028071A4B00C2C566 /* Logs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logs.swift; sourceTree = "<group>"; };
+		FF0C1F0328071A7000C2C566 /* LogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogManager.swift; sourceTree = "<group>"; };
+		FF0C477D27EF168300DC4C59 /* ConfigImport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigImport.swift; sourceTree = "<group>"; };
+		FF0C478027F0BD2900DC4C59 /* ListStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStorage.swift; sourceTree = "<group>"; };
+		FF25CF9B27EA10F60094D831 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF25CF9E27EA14A30094D831 /* ListOfButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfButtons.swift; sourceTree = "<group>"; };
+		FF349FB327EA530F0072931A /* NewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewButton.swift; sourceTree = "<group>"; };
+		FF6149FA27E49EA300BFE900 /* KControlApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KControlApp.swift; sourceTree = "<group>"; };
+		FF614A0127E49EA500BFE900 /* KControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF614A0727E49EA500BFE900 /* KControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF614A0927E49EA500BFE900 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		FF614A1827E49ECE00BFE900 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		FF614A1C27E49EFC00BFE900 /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
+		FF614A2027E49F2500BFE900 /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		FF614A2427E49F9000BFE900 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		FF614A2727E4A25700BFE900 /* KButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KButtonStyle.swift; sourceTree = "<group>"; };
+		FF614A2D27E5207800BFE900 /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
+		FF614A3027E5236300BFE900 /* NewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewButton.swift; sourceTree = "<group>"; };
+		FF614A3527E52E0D00BFE900 /* ListOfButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfButtons.swift; sourceTree = "<group>"; };
+		FF614A3827E531CB00BFE900 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		FF614A4027E5CE7E00BFE900 /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
+		FF614A4427E67AAD00BFE900 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		FF88A75427F850BF00A3AA7C /* ViaCommands.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ViaCommands.txt; sourceTree = "<group>"; usesTabs = 0; };
+		FF88A75727F871D100A3AA7C /* PowerManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerManagerView.swift; sourceTree = "<group>"; };
+		FF88A75927F873F800A3AA7C /* WindowButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowButtons.swift; sourceTree = "<group>"; };
+		FF88A75C27F878EE00A3AA7C /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		FF88A76027F8AA4F00A3AA7C /* ViaCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViaCommand.swift; sourceTree = "<group>"; };
+		FF8BCE6B280AA98F00A6B75B /* ViaBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViaBottomView.swift; sourceTree = "<group>"; };
+		FF940779280984A000A14E87 /* LogStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogStruct.swift; sourceTree = "<group>"; };
+		FFCD556A27F39C0F008D84E9 /* ViaTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViaTopView.swift; sourceTree = "<group>"; };
+		FFCD556C27F39D17008D84E9 /* ViaButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViaButtonStyle.swift; sourceTree = "<group>"; };
+		FFCD556E27F49B6C008D84E9 /* TelnetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelnetManager.swift; sourceTree = "<group>"; };
+		FFCD557127F49C8D008D84E9 /* ListOfViaButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfViaButtons.swift; sourceTree = "<group>"; };
+		FFCD557327F49FB2008D84E9 /* ViaButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViaButtonView.swift; sourceTree = "<group>"; };
+		FFCD557627F4A11A008D84E9 /* NewViaButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViaButtonView.swift; sourceTree = "<group>"; };
+		FFF9809927E6A18500B3F5F0 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		FFF9809C27E90AFC00B3F5F0 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		FFF9809F27E9C19700B3F5F0 /* BottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomView.swift; sourceTree = "<group>"; };
+		FFF980A227E9CC6500B3F5F0 /* KControl--macOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "KControl--macOS--Info.plist"; sourceTree = "<group>"; };
+		FFF980A527E9FF4400B3F5F0 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		FFF980AD27EA09FD00B3F5F0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		FFF980AF27EA0A6100B3F5F0 /* SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
+		FFF980B327EA0AC000B3F5F0 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF6149FE27E49EA500BFE900 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF614A0427E49EA500BFE900 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF25CFA027EA14FF0094D831 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF614A2427E49F9000BFE900 /* ButtonView.swift */,
+				FFCD557327F49FB2008D84E9 /* ViaButtonView.swift */,
+				FF88A75C27F878EE00A3AA7C /* TextField.swift */,
+				FF88A75927F873F800A3AA7C /* WindowButtons.swift */,
+			);
+			name = View;
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FF6149F427E49EA300BFE900 = {
+			isa = PBXGroup;
+			children = (
+				FFF980A227E9CC6500B3F5F0 /* KControl--macOS--Info.plist */,
+				FFF9809927E6A18500B3F5F0 /* .gitignore */,
+				FFF980A527E9FF4400B3F5F0 /* Readme.md */,
+				FF6149F927E49EA300BFE900 /* Shared */,
+				FFF980A327E9FDE000B3F5F0 /* iOS */,
+				FF614A0827E49EA500BFE900 /* macOS */,
+				FF614A0227E49EA500BFE900 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF6149F927E49EA300BFE900 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				FF6149FA27E49EA300BFE900 /* KControlApp.swift */,
+				FF614A1F27E49F0600BFE900 /* Model */,
+				FF614A2327E49F2B00BFE900 /* ViewModel */,
+				FF25CFA027EA14FF0094D831 /* View */,
+				FF614A4327E67A9E00BFE900 /* Helpers */,
+				FF88A76327F8B64100A3AA7C /* Sources */,
+				FF25CF9B27EA10F60094D831 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		FF614A0227E49EA500BFE900 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF614A0127E49EA500BFE900 /* KControl.app */,
+				FF614A0727E49EA500BFE900 /* KControl.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF614A0827E49EA500BFE900 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				FF614A1B27E49EEA00BFE900 /* View */,
+				FF614A0927E49EA500BFE900 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		FF614A1B27E49EEA00BFE900 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF614A1827E49ECE00BFE900 /* MainView.swift */,
+				FFCD556827F39B56008D84E9 /* kNetView */,
+				FFCD556927F39B88008D84E9 /* ViaView */,
+				FF614A3827E531CB00BFE900 /* SettingsView.swift */,
+				FF0C1F0028071A4B00C2C566 /* Logs.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF614A1F27E49F0600BFE900 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF88A75F27F8A9F000A3AA7C /* SimpleStructs */,
+				FF0C477D27EF168300DC4C59 /* ConfigImport.swift */,
+				FF0C478027F0BD2900DC4C59 /* ListStorage.swift */,
+				FF0C1EF82805A85400C2C566 /* Telnet.swift */,
+				FF614A1C27E49EFC00BFE900 /* Requests.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FF614A2327E49F2B00BFE900 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF614A2027E49F2500BFE900 /* Manager.swift */,
+				FFF9809C27E90AFC00B3F5F0 /* NetworkManager.swift */,
+				FFCD556E27F49B6C008D84E9 /* TelnetManager.swift */,
+				FF0C1F0328071A7000C2C566 /* LogManager.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FF614A4327E67A9E00BFE900 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FF614A4027E5CE7E00BFE900 /* Modifiers.swift */,
+				FF614A4427E67AAD00BFE900 /* Color.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FF88A75F27F8A9F000A3AA7C /* SimpleStructs */ = {
+			isa = PBXGroup;
+			children = (
+				FF614A2727E4A25700BFE900 /* KButtonStyle.swift */,
+				FFCD556C27F39D17008D84E9 /* ViaButtonStyle.swift */,
+				FF88A76027F8AA4F00A3AA7C /* ViaCommand.swift */,
+				FF0C1EFD2805B82600C2C566 /* HostInfo.swift */,
+				FF940779280984A000A14E87 /* LogStruct.swift */,
+			);
+			path = SimpleStructs;
+			sourceTree = "<group>";
+		};
+		FF88A76327F8B64100A3AA7C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FF88A75427F850BF00A3AA7C /* ViaCommands.txt */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		FFCD556827F39B56008D84E9 /* kNetView */ = {
+			isa = PBXGroup;
+			children = (
+				FF614A2D27E5207800BFE900 /* ControlView.swift */,
+				FF614A3527E52E0D00BFE900 /* ListOfButtons.swift */,
+				FFF9809F27E9C19700B3F5F0 /* BottomView.swift */,
+				FF614A3027E5236300BFE900 /* NewButton.swift */,
+			);
+			path = kNetView;
+			sourceTree = "<group>";
+		};
+		FFCD556927F39B88008D84E9 /* ViaView */ = {
+			isa = PBXGroup;
+			children = (
+				FFCD556A27F39C0F008D84E9 /* ViaTopView.swift */,
+				FFCD557127F49C8D008D84E9 /* ListOfViaButtons.swift */,
+				FFCD557627F4A11A008D84E9 /* NewViaButtonView.swift */,
+				FF8BCE6B280AA98F00A6B75B /* ViaBottomView.swift */,
+				FF88A75727F871D100A3AA7C /* PowerManagerView.swift */,
+			);
+			path = ViaView;
+			sourceTree = "<group>";
+		};
+		FFF980A327E9FDE000B3F5F0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				FFF980A427E9FEC900B3F5F0 /* View */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		FFF980A427E9FEC900B3F5F0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FFF980AD27EA09FD00B3F5F0 /* MainView.swift */,
+				FF25CF9E27EA14A30094D831 /* ListOfButtons.swift */,
+				FF349FB327EA530F0072931A /* NewButton.swift */,
+				FFF980B327EA0AC000B3F5F0 /* InfoView.swift */,
+				FFF980AF27EA0A6100B3F5F0 /* SetupView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF614A0027E49EA500BFE900 /* KControl (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF614A1227E49EA500BFE900 /* Build configuration list for PBXNativeTarget "KControl (iOS)" */;
+			buildPhases = (
+				FF6149FD27E49EA500BFE900 /* Sources */,
+				FF6149FE27E49EA500BFE900 /* Frameworks */,
+				FF6149FF27E49EA500BFE900 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KControl (iOS)";
+			productName = "KControl (iOS)";
+			productReference = FF614A0127E49EA500BFE900 /* KControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF614A0627E49EA500BFE900 /* KControl (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF614A1527E49EA500BFE900 /* Build configuration list for PBXNativeTarget "KControl (macOS)" */;
+			buildPhases = (
+				FF614A0327E49EA500BFE900 /* Sources */,
+				FF614A0427E49EA500BFE900 /* Frameworks */,
+				FF614A0527E49EA500BFE900 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KControl (macOS)";
+			productName = "KControl (macOS)";
+			productReference = FF614A0727E49EA500BFE900 /* KControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF6149F527E49EA300BFE900 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					FF614A0027E49EA500BFE900 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					FF614A0627E49EA500BFE900 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = FF6149F827E49EA300BFE900 /* Build configuration list for PBXProject "KControl" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF6149F427E49EA300BFE900;
+			productRefGroup = FF614A0227E49EA500BFE900 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF614A0027E49EA500BFE900 /* KControl (iOS) */,
+				FF614A0627E49EA500BFE900 /* KControl (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF6149FF27E49EA500BFE900 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF25CF9C27EA10F60094D831 /* Assets.xcassets in Resources */,
+				FF88A75527F850BF00A3AA7C /* ViaCommands.txt in Resources */,
+				FFF9809A27E6A18500B3F5F0 /* .gitignore in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF614A0527E49EA500BFE900 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF25CF9D27EA10F60094D831 /* Assets.xcassets in Resources */,
+				FF88A75627F850BF00A3AA7C /* ViaCommands.txt in Resources */,
+				FFF9809B27E6A18500B3F5F0 /* .gitignore in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF6149FD27E49EA500BFE900 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF88A76127F8AA4F00A3AA7C /* ViaCommand.swift in Sources */,
+				FFF980AE27EA09FD00B3F5F0 /* MainView.swift in Sources */,
+				FF614A4527E67AAD00BFE900 /* Color.swift in Sources */,
+				FF88A75D27F878EE00A3AA7C /* TextField.swift in Sources */,
+				FF0C477E27EF168300DC4C59 /* ConfigImport.swift in Sources */,
+				FF0C1EF92805A85400C2C566 /* Telnet.swift in Sources */,
+				FF0C1F0428071A7000C2C566 /* LogManager.swift in Sources */,
+				FFF980B427EA0AC000B3F5F0 /* InfoView.swift in Sources */,
+				FF614A1D27E49EFC00BFE900 /* Requests.swift in Sources */,
+				FF614A2827E4A25700BFE900 /* KButtonStyle.swift in Sources */,
+				FF614A0A27E49EA500BFE900 /* KControlApp.swift in Sources */,
+				FF0C1F0128071A4B00C2C566 /* Logs.swift in Sources */,
+				FFF9809D27E90AFC00B3F5F0 /* NetworkManager.swift in Sources */,
+				FF88A75A27F873F800A3AA7C /* WindowButtons.swift in Sources */,
+				FFCD556F27F49B6C008D84E9 /* TelnetManager.swift in Sources */,
+				FF349FB427EA530F0072931A /* NewButton.swift in Sources */,
+				FF614A2127E49F2500BFE900 /* Manager.swift in Sources */,
+				FFCD557C27F4DEF4008D84E9 /* ViaButtonStyle.swift in Sources */,
+				FF25CFA127EA15240094D831 /* ButtonView.swift in Sources */,
+				FFF980B027EA0A6100B3F5F0 /* SetupView.swift in Sources */,
+				FF0C1EFE2805B82600C2C566 /* HostInfo.swift in Sources */,
+				FF0C478127F0BD2900DC4C59 /* ListStorage.swift in Sources */,
+				FFCD557427F49FB2008D84E9 /* ViaButtonView.swift in Sources */,
+				FF25CF9F27EA14A30094D831 /* ListOfButtons.swift in Sources */,
+				FF614A4127E5CE7E00BFE900 /* Modifiers.swift in Sources */,
+				FF94077A280984A000A14E87 /* LogStruct.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF614A0327E49EA500BFE900 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF614A3227E5236300BFE900 /* NewButton.swift in Sources */,
+				FFCD557227F49C8D008D84E9 /* ListOfViaButtons.swift in Sources */,
+				FFCD557827F4A11A008D84E9 /* NewViaButtonView.swift in Sources */,
+				FF0C1EFA2805A85400C2C566 /* Telnet.swift in Sources */,
+				FFCD557027F49B6C008D84E9 /* TelnetManager.swift in Sources */,
+				FF88A75827F871D100A3AA7C /* PowerManagerView.swift in Sources */,
+				FF0C1F0528071A7000C2C566 /* LogManager.swift in Sources */,
+				FF0C1F0228071A4B00C2C566 /* Logs.swift in Sources */,
+				FF88A75E27F878EE00A3AA7C /* TextField.swift in Sources */,
+				FF0C478227F0BD2900DC4C59 /* ListStorage.swift in Sources */,
+				FF614A2F27E5207800BFE900 /* ControlView.swift in Sources */,
+				FF614A3727E52E0D00BFE900 /* ListOfButtons.swift in Sources */,
+				FFCD557527F49FB2008D84E9 /* ViaButtonView.swift in Sources */,
+				FF614A4627E67AAD00BFE900 /* Color.swift in Sources */,
+				FF614A2627E49F9000BFE900 /* ButtonView.swift in Sources */,
+				FF614A1E27E49EFC00BFE900 /* Requests.swift in Sources */,
+				FFCD556B27F39C0F008D84E9 /* ViaTopView.swift in Sources */,
+				FF614A1A27E49ECE00BFE900 /* MainView.swift in Sources */,
+				FF614A2927E4A25700BFE900 /* KButtonStyle.swift in Sources */,
+				FFCD556D27F39D17008D84E9 /* ViaButtonStyle.swift in Sources */,
+				FF0C1EFF2805B82600C2C566 /* HostInfo.swift in Sources */,
+				FF94077B280984A000A14E87 /* LogStruct.swift in Sources */,
+				FFF980A127E9C19700B3F5F0 /* BottomView.swift in Sources */,
+				FF614A0B27E49EA500BFE900 /* KControlApp.swift in Sources */,
+				FF88A75B27F873F800A3AA7C /* WindowButtons.swift in Sources */,
+				FF88A76227F8AA4F00A3AA7C /* ViaCommand.swift in Sources */,
+				FFF9809E27E90AFC00B3F5F0 /* NetworkManager.swift in Sources */,
+				FF614A2227E49F2500BFE900 /* Manager.swift in Sources */,
+				FF614A3A27E531CB00BFE900 /* SettingsView.swift in Sources */,
+				FF0C477F27EF168300DC4C59 /* ConfigImport.swift in Sources */,
+				FF614A4227E5CE7E00BFE900 /* Modifiers.swift in Sources */,
+				FF8BCE6C280AA98F00A6B75B /* ViaBottomView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FF614A1027E49EA500BFE900 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF614A1127E49EA500BFE900 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		FF614A1327E49EA500BFE900 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V6D8W25533;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ak77m.KControl;
+				PRODUCT_NAME = KControl;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF614A1427E49EA500BFE900 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V6D8W25533;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ak77m.KControl;
+				PRODUCT_NAME = KControl;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF614A1627E49EA500BFE900 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V6D8W25533;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "KControl--macOS--Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ak77m.KControl;
+				PRODUCT_NAME = KControl;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FF614A1727E49EA500BFE900 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V6D8W25533;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "KControl--macOS--Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ak77m.KControl;
+				PRODUCT_NAME = KControl;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF6149F827E49EA300BFE900 /* Build configuration list for PBXProject "KControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF614A1027E49EA500BFE900 /* Debug */,
+				FF614A1127E49EA500BFE900 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF614A1227E49EA500BFE900 /* Build configuration list for PBXNativeTarget "KControl (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF614A1327E49EA500BFE900 /* Debug */,
+				FF614A1427E49EA500BFE900 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF614A1527E49EA500BFE900 /* Build configuration list for PBXNativeTarget "KControl (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF614A1627E49EA500BFE900 /* Debug */,
+				FF614A1727E49EA500BFE900 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF6149F527E49EA300BFE900 /* Project object */;
+}

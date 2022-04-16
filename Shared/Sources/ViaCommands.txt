@@ -1,0 +1,36 @@
+ 0:
+ 1: Режим презентации Вкл : PrsMode: Set: 1:
+ 2: Режим презентации Выкл : PrsMode: Set: 0:
+ 3: Стереть все файлы на диске VIA : CloudClean:
+ 4: Упр. компьютером с VIA Вкл. : Control: 1: &:
+ 5: Упр. компьютером с VIA Выкл. : Control: 0: &:
+ 6: Не отвлекать (DND) Вкл : DND: Set: &:
+ 7: Не отвлекать (DND) Выкл : DND: UnSet: &:
+ 8: DSS play : DSS: Set: 1:
+ 9: DSS stop : DSS: Set: 0:
+10: Получить MAC адрес : GetMacAdd:
+11: Сетевые настройки: IpInfo:
+12: Отключить пользователя: KickOff: &:
+13: SCREENSHARE для всех Вкл: ScreenShare: On:
+14: SCREENSHARE для всех Выкл: ScreenShare: Off:
+15: Громкость  0: Vol: Set: 0:
+16: Громкость 25%: Vol: Set: 25:
+17: Громкость 50%: Vol: Set: 50:
+18: Громкость 75%: Vol: Set: 75:
+19: Старт стриминга с URL : StreamingURL: 1: &:
+20: Стоп стриминга с URL : StreamingURL: 0: 127.0.0.1:
+21: Доска для заметок Вкл: WhiteBoard: On:
+22: Доска для заметок Сохр.: WhiteBoard: Off: 1:
+23: Доска для заметок Выйти: WhiteBoard: Off: 2:
+24: Запись Вкл : Record: RStart: 0:
+25: Запись Выкл : Record: RStop:
+26: Запустить приложение: Launch: 0: &:
+27: Установить IP: IpSetting: &: &: &: &: &:
+28: Статус пользователей: PList: all:
+29: Обновить прошивку: SUpdate: &:
+30: Test String : GetStatus:
+31: StreamingOn : Streaming: Set: 0: &:
+32: StreamingOff : Streaming: Set: 1: &:
+33: WiFI guestMode ON: WifiGuestMode: Set: 1:
+34: WiFI guestMode Off: WifiGuestMode: Set: 0:
+35: Версия устройства: GetVersion:
