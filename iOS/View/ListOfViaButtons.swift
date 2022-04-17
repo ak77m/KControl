@@ -1,8 +1,8 @@
 //
 //  ListOfViaButtons.swift
-//  KControl (macOS)
+//  KControl (iOS)
 //
-//  Created by ak77m on 30.03.2022.
+//  Created by ak77m on 17.04.2022.
 //
 
 import SwiftUI
@@ -12,17 +12,17 @@ struct ListOfViaButtons: View {
     @EnvironmentObject var device : TelnetManager
     
     @State private var isEditButton = false
-    @State private var commandOk = false
+    @State private var powerButton = false
     
     let columns1 = Array(repeating: GridItem(.flexible(minimum: 120, maximum: 400)), count: 2)
     
     var body: some View {
         
-        ScrollView{
+        NavigationView{
             LazyVGrid(columns: columns1, spacing: 10){
                 ForEach(viaButtons.viaButtonsList, id: \.id) { item in
                     
-                    ViaButtonView(item: item)
+                    ButtonView(item: item)
                         .modifier(PressModifier(tapAction: {
                            device.sendCommand(item, hostInfo: viaButtons.viaHost)
                         }, longPressAction: { }, mainColor: item.color1))
@@ -40,11 +40,34 @@ struct ListOfViaButtons: View {
                 }
                 
             }
+            .navigationTitle(viaButtons.viaHost.ipAddress)
+            .navigationBarTitleDisplayMode(.inline)
+
+            .toolbar{
+                
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        // new record
+                        viaButtons.viaActiveItem = ViaButtonStyle()
+                        isEditButton.toggle()
+                    }, label: {Image(systemName: "plus.circle")})
+                }
+                
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button(action: {
+                        powerButton.toggle()
+                    }, label: {Image(systemName: "power.circle")})
+                }
+                
+                
+            }
            
         }
         .sheet(isPresented: $isEditButton) {
             NewViaButtonView()
-            
+        }
+        .sheet(isPresented: $powerButton) {
+            PowerManagerView()
         }
         
     }

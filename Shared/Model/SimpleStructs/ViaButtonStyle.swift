@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ViaButtonStyle : Identifiable, Hashable, Codable, fixButtonStyle {
+struct ViaButtonStyle : Identifiable, Hashable, Codable, fixButtonStyle, ButtonStyleProtocol {
     
     var id =  UUID()
     var label = ""

@@ -1,14 +1,22 @@
 //
-//  ViaButtonView.swift
+//  Button.swift
 //  KControl
 //
-//  Created by ak77m on 30.03.2022.
+//  Created by ak77m on 18.03.2022.
 //
 
 import SwiftUI
 
-struct ViaButtonView: View {
-    var item :  ViaButtonStyle
+protocol ButtonStyleProtocol {
+    var image : String { get set}
+    var label : String { get set}
+    var description : String { get set}
+}
+
+
+struct ButtonView: View {
+    
+    var item :  ButtonStyleProtocol
     
     var body: some View {
         HStack(alignment: .center){
@@ -30,8 +38,4 @@ struct ViaButtonView: View {
     }
 }
 
-struct ViaButtonView_Previews: PreviewProvider {
-    static var previews: some View {
-        ViaButtonView(item: ViaButtonStyle())
-    }
-}
+

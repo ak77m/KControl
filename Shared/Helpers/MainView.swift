@@ -8,7 +8,17 @@
 import SwiftUI
 
 struct MainView: View {
-  //  @EnvironmentObject var kButtons: ButtonsManager
+
+    
+#if os(iOS)
+    init(){
+        //Theme.navigationBarColors(background: .darkGray, titleColor: .white)
+        UITabBar.appearance().backgroundColor = UIColor.darkGray
+        UITabBar.appearance().unselectedItemTintColor = UIColor.white
+    }
+#endif
+    
+    
     
     @State private var selection = 0
     var body: some View {
@@ -16,7 +26,9 @@ struct MainView: View {
         TabView(selection: $selection){
             
             VStack(alignment: .leading){
+#if os(macOS)
                 ControlView()
+#endif
                 ListOfButtons()
                 BottomView()
             }
@@ -28,7 +40,9 @@ struct MainView: View {
             }
             
             VStack(alignment: .leading){
+#if os(macOS)
                 ViaTopView()
+#endif
                 ListOfViaButtons()
                 BottomView()
             }
@@ -60,9 +74,12 @@ struct MainView: View {
             }
         }
         
-        
+#if os(macOS)
         .frame(minWidth: 400, idealWidth: 400, maxWidth: 400,
                minHeight: 550, idealHeight: 550, maxHeight: .infinity)
+#else
+        .navigationViewStyle(StackNavigationViewStyle())
+#endif
     }
     
 }

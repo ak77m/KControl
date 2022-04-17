@@ -27,7 +27,7 @@ final class Telnet {
                 }
                 self?.getAnswer { self?.answer = $0 }
                 sleep(1) // Если не ждать то результатом будет первое выполнение функции getAnswer, а она выполняется несколько раз
-                completion(self?.answer ?? "Нет ответа")
+                completion(self?.answer ?? "Пусто")
                 
             case .setup:
                 print("State: Setup\n")
@@ -41,7 +41,7 @@ final class Telnet {
                 break
             default:
                // self.answer = "Ошибка подключения "
-                completion(self?.answer ?? "Ошибка подключения" )
+                completion(self?.answer ?? "")
                 break
             }
         }

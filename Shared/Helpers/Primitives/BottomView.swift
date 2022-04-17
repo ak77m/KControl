@@ -12,7 +12,7 @@ struct BottomView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Ответ  : \(log.answers[log.answers.count-1].text)")
+            Text("Запрос/Ответ :\(log.answers[log.answers.count-1].text)")
                 .lineLimit(1)
                
         }

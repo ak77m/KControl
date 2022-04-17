@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct KButtonStyle : Identifiable, Hashable, Codable, fixButtonStyle { 
+struct KButtonStyle : Identifiable, Hashable, Codable, fixButtonStyle, ButtonStyleProtocol { 
     
     var id = UUID()
     var label = ""

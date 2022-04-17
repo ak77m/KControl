@@ -8,11 +8,13 @@
 import Foundation
 import SwiftUI
 
+
 /// To use methods ID and COLOR1 inside generic function
 protocol fixButtonStyle {
     var id : UUID { get set}
     var color1 : Color { get set }
 }
+
 
 final class ButtonsManager : ObservableObject {
     /// K-Net view
@@ -98,12 +100,12 @@ final class ButtonsManager : ObservableObject {
     
     
     // MARK: - Clear array of Button
-    func deleteList() {
+    func kListClear() {
         kButtonsList = [KButtonStyle]()
         _ = listStorage.writeList(kButtonsList, fileName: kListFileName)
     }
     
-    func deleteViaList() {
+    func viaListClear() {
         viaButtonsList = [ViaButtonStyle]()
         _ = listStorage.writeList(viaButtonsList, fileName: viaListFileName)
     }

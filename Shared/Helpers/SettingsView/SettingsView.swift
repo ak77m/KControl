@@ -8,10 +8,13 @@
 import SwiftUI
 
 struct SettingsView: View {
-    // @Environment(\.presentationMode) var presentationMode
+#if os(iOS)
+    @Environment(\.presentationMode) var presentationMode
+#endif
     @EnvironmentObject var kButtons: ButtonsManager
     @EnvironmentObject var network : NetworkManager
     
+    @State private var alwaysFalse = false
     @State private var kDeleteAlert = false
     @State private var viaDeleteAlert = false
     
@@ -41,43 +44,35 @@ struct SettingsView: View {
                 }
                 
                 Section(header: Text("Импорт конфигурации")) {
-                    VStack(alignment: .leading){
-                        HStack{
-                            Text("Получить список из контроллера")
-                            Spacer()
-                            Button(" Запрос ") { network.getConfigFromController(kButtons.kIpAddress) }
-                        }
+                    VStack(alignment: .leading, spacing: 10){
                         
-                        HStack{
-                            Text("Удалить список K-Net кнопок")
-                            Spacer()
-                            Button("Очистка") { kDeleteAlert.toggle() }
-                                .alert("Внимание! Список будет удален без возможности восстановления.", isPresented: $kDeleteAlert) {
-                                    Button("Отмена", role: .cancel) { }
-                                    Button("Удалить") { kButtons.deleteList()  }
-                                }
-                        }
+                        TextAndButton(text: "Получить список из контроллера",
+                                      button: " Запрос ", alert: $alwaysFalse,
+                                      tapAction: {network.getConfigFromController(kButtons.kIpAddress)},
+                                      alertAction: {})
                         
-                        HStack{
-                            Text("Удалить список VIA кнопок")
-                            Spacer()
-                            Button("Очистка") { viaDeleteAlert.toggle() }
-                                .alert("Внимание! Список будет удален без возможности восстановления.", isPresented: $viaDeleteAlert) {
-                                    Button("Отмена", role: .cancel) { }
-                                    Button("Удалить") { kButtons.deleteViaList()  }
-                                }
-                        }
-                    }.padding(15)
+                        TextAndButton(text: "Очистить список K-Net кнопок",
+                                      button: " Удалить ", alert: $kDeleteAlert,
+                                      tapAction:   {kDeleteAlert.toggle() },
+                                      alertAction: {kButtons.kListClear()})
+                        
+                        TextAndButton(text: "Очистить список VIA кнопок",
+                                      button: " Удалить ", alert: $viaDeleteAlert,
+                                      tapAction:   {viaDeleteAlert.toggle() },
+                                      alertAction: {kButtons.viaListClear()})
+                        
+                    }.padding()
+                    
                 }
-                Spacer()
+                Spacer(minLength: 30)
                 
             }
-            //.padding(.vertical, 50.0)
             Button("Применить") { confirm() }
         }
         .padding(15)
+#if os(macOS)
         .frame(minWidth: 400, maxWidth: 400, minHeight: 400, maxHeight: 400)
-        
+#endif
         
     }
     

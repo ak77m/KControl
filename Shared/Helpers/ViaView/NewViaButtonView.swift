@@ -23,10 +23,13 @@ struct NewViaButtonView: View {
                 Section("Команда для управления VIA") {
                     VStack{
                         Picker("", selection: $buttons.viaActiveItem.commandId) {
-                            ForEach(via.commands, id: \.id) { Text("\($0.name)") }
+                            ForEach(via.commands, id: \.id) { Text("\($0.name)").font(.footnote) }
                         }
                         .onChange(of: buttons.viaActiveItem.commandId) { isEdit($0) }
-                            .labelsHidden()
+                        .labelsHidden()
+                        .pickerStyle(.menu)
+                        .overlay(RoundedRectangle(cornerRadius: 2, style: .continuous)
+                            .stroke(.gray, lineWidth: 1))
                         
                         MyTextField(symbol: "note.text.badge.plus", comment: "Доп. параметр P1",
                                     disabled: p1Active, field: $buttons.viaActiveItem.p1)
@@ -41,7 +44,7 @@ struct NewViaButtonView: View {
                     
                 }.padding(.vertical, 5)
                 
-                Section("виз оформление: Текст") {
+                Section("Оформление: Текст") {
                     VStack{
                         MyTextField(symbol: "circle.grid.cross.up.filled", comment: "Название кнопки",
                                     field: $buttons.viaActiveItem.label)
@@ -51,6 +54,9 @@ struct NewViaButtonView: View {
                         Picker("Выбор картинки", selection: $buttons.viaActiveItem.image) {
                             ForEach(buttons.emoji, id: \.self) { Text("\($0)") }
                         }
+                        .overlay(RoundedRectangle(cornerRadius: 2, style: .continuous)
+                            .stroke(.gray, lineWidth: 1))
+                        
                     }.padding(.horizontal)
                 }.padding(.vertical, 5)
                 

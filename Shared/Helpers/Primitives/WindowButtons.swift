@@ -21,7 +21,8 @@ struct WindowButtons: View {
                 presentationMode.wrappedValue.dismiss()
             }
             
-        }.padding(.vertical, 10)
+        }
+        .padding(.vertical, 10)
     }
 }
 

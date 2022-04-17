@@ -26,7 +26,9 @@ final class LogManager: ObservableObject {
     
     
     @objc  func addRecordToLog(notification: NSNotification) {
-        answers.append(LogStruct(notification.object as! String))
+        DispatchQueue.main.async {
+            self.answers.append(LogStruct(notification.object as! String))
+        }
     }
     
     

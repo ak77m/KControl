@@ -25,7 +25,7 @@ struct ListOfButtons: View {
                         
                         ButtonView(item: item)
                             .modifier(PressModifier(tapAction: {
-                                _ = network.sendCommand(kButtons.kIpAddress, knet: item.kNetDevice, devID : item.kNetId)
+                                network.sendCommand(kButtons.kIpAddress, knet: item.kNetDevice, devID : item.kNetId)
                             },
                             longPressAction: {
                                 // edit record
