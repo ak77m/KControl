@@ -28,10 +28,6 @@ final class ButtonsManager : ObservableObject {
     @Published var viaActiveItem = ViaButtonStyle()
     @Published var viaHost = HostInfo()
     
-//    @Published var viaIpAddress = UserDefaults.standard.string(forKey: "viaIpAddress") ?? "192.168.0.0"
-//    @Published var viaLogin = UserDefaults.standard.string(forKey: "viaLogin") ?? "su"
-//    @Published var viaPassword = UserDefaults.standard.string(forKey: "viaPassword") ?? "supass"
-    
     
     /// Local storage (JSON)
     let listStorage = ListStorage()

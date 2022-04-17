@@ -24,6 +24,7 @@
 		FF25CF9F27EA14A30094D831 /* ListOfButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF25CF9E27EA14A30094D831 /* ListOfButtons.swift */; };
 		FF25CFA127EA15240094D831 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF614A2427E49F9000BFE900 /* ButtonView.swift */; };
 		FF349FB427EA530F0072931A /* NewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF349FB327EA530F0072931A /* NewButton.swift */; };
+		FF605173280C69540072CB5E /* BottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF9809F27E9C19700B3F5F0 /* BottomView.swift */; };
 		FF614A0A27E49EA500BFE900 /* KControlApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6149FA27E49EA300BFE900 /* KControlApp.swift */; };
 		FF614A0B27E49EA500BFE900 /* KControlApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6149FA27E49EA300BFE900 /* KControlApp.swift */; };
 		FF614A1A27E49ECE00BFE900 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF614A1827E49ECE00BFE900 /* MainView.swift */; };
@@ -51,7 +52,6 @@
 		FF88A75E27F878EE00A3AA7C /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF88A75C27F878EE00A3AA7C /* TextField.swift */; };
 		FF88A76127F8AA4F00A3AA7C /* ViaCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF88A76027F8AA4F00A3AA7C /* ViaCommand.swift */; };
 		FF88A76227F8AA4F00A3AA7C /* ViaCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF88A76027F8AA4F00A3AA7C /* ViaCommand.swift */; };
-		FF8BCE6C280AA98F00A6B75B /* ViaBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8BCE6B280AA98F00A6B75B /* ViaBottomView.swift */; };
 		FF94077A280984A000A14E87 /* LogStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF940779280984A000A14E87 /* LogStruct.swift */; };
 		FF94077B280984A000A14E87 /* LogStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF940779280984A000A14E87 /* LogStruct.swift */; };
 		FFCD556B27F39C0F008D84E9 /* ViaTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCD556A27F39C0F008D84E9 /* ViaTopView.swift */; };
@@ -103,7 +103,6 @@
 		FF88A75927F873F800A3AA7C /* WindowButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowButtons.swift; sourceTree = "<group>"; };
 		FF88A75C27F878EE00A3AA7C /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		FF88A76027F8AA4F00A3AA7C /* ViaCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViaCommand.swift; sourceTree = "<group>"; };
-		FF8BCE6B280AA98F00A6B75B /* ViaBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViaBottomView.swift; sourceTree = "<group>"; };
 		FF940779280984A000A14E87 /* LogStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogStruct.swift; sourceTree = "<group>"; };
 		FFCD556A27F39C0F008D84E9 /* ViaTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViaTopView.swift; sourceTree = "<group>"; };
 		FFCD556C27F39D17008D84E9 /* ViaButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViaButtonStyle.swift; sourceTree = "<group>"; };
@@ -146,6 +145,7 @@
 				FFCD557327F49FB2008D84E9 /* ViaButtonView.swift */,
 				FF88A75C27F878EE00A3AA7C /* TextField.swift */,
 				FF88A75927F873F800A3AA7C /* WindowButtons.swift */,
+				FFF9809F27E9C19700B3F5F0 /* BottomView.swift */,
 			);
 			name = View;
 			path = Helpers;
@@ -265,7 +265,6 @@
 			children = (
 				FF614A2D27E5207800BFE900 /* ControlView.swift */,
 				FF614A3527E52E0D00BFE900 /* ListOfButtons.swift */,
-				FFF9809F27E9C19700B3F5F0 /* BottomView.swift */,
 				FF614A3027E5236300BFE900 /* NewButton.swift */,
 			);
 			path = kNetView;
@@ -277,7 +276,6 @@
 				FFCD556A27F39C0F008D84E9 /* ViaTopView.swift */,
 				FFCD557127F49C8D008D84E9 /* ListOfViaButtons.swift */,
 				FFCD557627F4A11A008D84E9 /* NewViaButtonView.swift */,
-				FF8BCE6B280AA98F00A6B75B /* ViaBottomView.swift */,
 				FF88A75727F871D100A3AA7C /* PowerManagerView.swift */,
 			);
 			path = ViaView;
@@ -414,6 +412,7 @@
 				FF0C1F0428071A7000C2C566 /* LogManager.swift in Sources */,
 				FFF980B427EA0AC000B3F5F0 /* InfoView.swift in Sources */,
 				FF614A1D27E49EFC00BFE900 /* Requests.swift in Sources */,
+				FF605173280C69540072CB5E /* BottomView.swift in Sources */,
 				FF614A2827E4A25700BFE900 /* KButtonStyle.swift in Sources */,
 				FF614A0A27E49EA500BFE900 /* KControlApp.swift in Sources */,
 				FF0C1F0128071A4B00C2C566 /* Logs.swift in Sources */,
@@ -469,7 +468,6 @@
 				FF614A3A27E531CB00BFE900 /* SettingsView.swift in Sources */,
 				FF0C477F27EF168300DC4C59 /* ConfigImport.swift in Sources */,
 				FF614A4227E5CE7E00BFE900 /* Modifiers.swift in Sources */,
-				FF8BCE6C280AA98F00A6B75B /* ViaBottomView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

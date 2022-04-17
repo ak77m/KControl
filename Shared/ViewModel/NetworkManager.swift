@@ -8,25 +8,24 @@
 import SwiftUI
 
 final class NetworkManager : ObservableObject {
-    
-    @Published var response = ""
-    @Published var answer = ""
+   
     @Published var configFromDevice = [KButtonStyle]()
     
-    var request = Requests()
-    var importCfg = ConfigImport()
+    private var request = Requests()
+    private var importCfg = ConfigImport()
     
     
     /// To convert and sent comand to K-Net device
-    func sendCommand(_ host: String, knet: Int = 0, devID : Int = 0 ) -> Bool {
+    func sendCommand(_ host: String, knet: Int = 0, devID : Int = 0 )  {
         let com = "/test.cgx?cmd=BTN%20\(devID),\(knet),R"
         request.fetchRequest(host, command: com) { response,answer in
             DispatchQueue.main.async {
-                self.response = response
-                self.answer = answer
+                let newValue = "\(response) : \(com)"
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "LogUpdated"), object: newValue)
            }
         }
-        return response == "200" ? true : false
+        
+        
     }
     
     /// Func only for K-Net device TODO: move to Model
@@ -37,13 +36,15 @@ final class NetworkManager : ObservableObject {
                 let temp = self.importCfg.getConfigFromData(iniData: answer)
                 
                  DispatchQueue.main.async {
-                     self.response = "Успешно, примените изм."
+                     let newValue = "Импорт успешен, примените изменения"
+                     NotificationCenter.default.post(name: NSNotification.Name(rawValue: "LogUpdated"), object: newValue)
                      self.configFromDevice = temp
                      
                 }
             } else {
                 DispatchQueue.main.async {
-                    self.response = "Ошибка \(response)"
+                    let newValue = "Ошибка \(response)"
+                    NotificationCenter.default.post(name: NSNotification.Name(rawValue: "LogUpdated"), object: newValue)
                 }
             }
         }

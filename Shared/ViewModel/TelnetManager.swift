@@ -12,12 +12,9 @@ import SwiftUI
 final class TelnetManager : ObservableObject {
   
     @Published var commands = [ViaCommand]()
-    @Published var answers : [LogStruct] = [LogStruct("Cтарт программы")]
     
-    var importCfg = ConfigImport()
-    var socket = Telnet()
-    
-    //var log = LogManager()
+    private var importCfg = ConfigImport()
+    private var socket = Telnet()
     
     init() {
         loadViaCommands()
@@ -45,7 +42,8 @@ final class TelnetManager : ObservableObject {
             activeItem.p3 =  commands[index].p3
         }
         
-        answers.append(LogStruct("Кнопка \(activeItem.cmd) : \(activeItem.p1): \(activeItem.p2)"))
+        let newValue = "Кнопка via \(activeItem.cmd) : \(activeItem.p1): \(activeItem.p2)"
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "LogUpdated"), object: newValue)
         return (activeItem, p1, p2, p3)
     }
     
@@ -59,7 +57,7 @@ final class TelnetManager : ObservableObject {
         // Send command and get answer
         socket.sendTo(ip, port: 9982, fullCommandSet) {
             let newValue = $0.replacingOccurrences(of: "|", with: " ") //"\n"
-            self.answers.append(LogStruct(newValue))
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "LogUpdated"), object: newValue)
         }
     }
     

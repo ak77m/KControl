@@ -24,19 +24,19 @@ struct MainView: View {
             .padding(.horizontal)
             .tabItem {
                 Image(systemName: "rectangle.connected.to.line.below")
-                Text("🎛 K-Net ")
+                Text(" K-Net ")
             }
             
             VStack(alignment: .leading){
                 ViaTopView()
                 ListOfViaButtons()
-                ViaBottomView()
+                BottomView()
             }
             .tag(1)
             .padding(.horizontal)
             .tabItem {
-                Image(systemName: "info.circle")
-                Text("VIA Control ")
+                Image(systemName: "rectangle.connected.to.line.below")
+                Text(" VIA Control ")
             }
             
             VStack(alignment: .leading){
@@ -45,8 +45,8 @@ struct MainView: View {
             .tag(2)
             .padding(.horizontal)
             .tabItem {
-                Image(systemName: "gear")
-                Text("Лог VIA")
+                Image(systemName: "info.circle")
+                Text(" Лог VIA ")
             }
             
             VStack(alignment: .leading){
@@ -56,7 +56,7 @@ struct MainView: View {
             .padding(.horizontal)
             .tabItem {
                 Image(systemName: "gear")
-                Text(" Настройка 🛠 ")
+                Text(" Настройка ")
             }
         }
         

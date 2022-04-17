@@ -6,25 +6,32 @@
 //
 
 import Foundation
+import NotificationCenter
 
-//final class LogManager: ObservableObject {
+//protocol LogsTransferDelegate : AnyObject {
 //
-//    
-//  @Published var  answers : [LogStruct] = [LogStruct("Cтарт программы")] {
-//        willSet {
-//                 objectWillChange.send()
-//                 print("Отработало ")
-//                }
-//        didSet {
-//            print(answers)
-//        }
-//    }
+//    func addRecordToLog(_ item : String)
 //
-//    
-//    func addRecordToLog(_ item : String) {
-//        self.answers.append(LogStruct(item))
-//        
-//       // print("item \(answers)")
-//    }
-//    
 //}
+
+
+final class LogManager: ObservableObject {
+    
+    init() {
+        NotificationCenter.default.addObserver(self, selector: #selector(addRecordToLog(notification:)),
+                                               name: NSNotification.Name(rawValue: "LogUpdated"), object: nil)
+    }
+    
+    @Published var  answers : [LogStruct] = [LogStruct("Cтарт программы")]
+    
+    
+    @objc  func addRecordToLog(notification: NSNotification) {
+        answers.append(LogStruct(notification.object as! String))
+    }
+    
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name(rawValue: "LogUpdated"), object: nil)
+    }
+    
+}

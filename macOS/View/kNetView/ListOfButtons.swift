@@ -13,7 +13,6 @@ struct ListOfButtons: View {
     @EnvironmentObject var network : NetworkManager
     
     @State private var isEditButton = false
-    @State private var commandOk = false
     
     let columns = Array(repeating: GridItem(.flexible(minimum: 120, maximum: 400)), count: 2)
     
@@ -25,7 +24,7 @@ struct ListOfButtons: View {
                     
                     ButtonView(item: item)
                         .modifier(PressModifier(tapAction: {
-                            commandOk = network.sendCommand(kButtons.kIpAddress, knet: item.kNetDevice, devID : item.kNetId)
+                            network.sendCommand(kButtons.kIpAddress, knet: item.kNetDevice, devID : item.kNetId)
                             AudioServicesPlaySystemSound(3)
                         }, longPressAction: { }, mainColor: item.color1))
                     

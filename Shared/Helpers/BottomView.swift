@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct BottomView: View {
-    @EnvironmentObject  var network : NetworkManager
+    @EnvironmentObject var log : LogManager
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Response: \(network.response)")
-            Text("Answer  : \(network.answer)")
-        }.font(.footnote)
+            Text("Ответ  : \(log.answers[log.answers.count-1].text)")
+                .lineLimit(1)
+               
+        }
+        .font(.footnote)
+        .padding(.vertical, 5)
     }
 }
 

@@ -115,7 +115,7 @@ struct ConfigImport {
     
     // MARK: Temp func
     /// function for future work with file
-    func saveConfigToFile(_ data: String) -> Bool {
+    private func saveConfigToFile(_ data: String) -> Bool {
         let path = FileManager.default.urls(for: .documentDirectory,
                                             in: .userDomainMask)[0].appendingPathComponent("KramerConf.ini")
         if let stringData = data.data(using: .utf8) {

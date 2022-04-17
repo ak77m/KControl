@@ -12,7 +12,8 @@ struct KControlApp: App {
     @StateObject var kButtons = ButtonsManager()
     @StateObject var network = NetworkManager()
     @StateObject var via = TelnetManager()
-   // @StateObject var log = LogManager()
+    @StateObject var log = LogManager()
+    
     
     var body: some Scene {
         WindowGroup {
@@ -20,7 +21,7 @@ struct KControlApp: App {
                 .environmentObject(kButtons)
                 .environmentObject(network)
                 .environmentObject(via)
-                //.environmentObject(log)
+                .environmentObject(log)
         }
         
        #if os(macOS)

@@ -84,7 +84,6 @@ struct SettingsView: View {
     func confirm () {
         if !network.configFromDevice.isEmpty {
             kButtons.kButtonsList = network.configFromDevice
-            if kButtons.saveListOfButtons() { network.response = "Сохранено" }
         }
         kButtons.saveDefaults()
     }

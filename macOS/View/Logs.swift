@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct Logs: View {
-    @EnvironmentObject var log : TelnetManager
+    @EnvironmentObject var log : LogManager
+    //@EnvironmentObject var log : TelnetManager
     @State private var selected = Set<LogStruct.ID>()
     
     var body: some View {
