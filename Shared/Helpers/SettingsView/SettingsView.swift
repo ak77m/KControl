@@ -43,13 +43,13 @@ struct SettingsView: View {
                     }.padding(15)
                 }
                 
-                Section(header: Text("Импорт конфигурации")) {
+                DisclosureGroup("Импорт и очистка конфигурации") {
                     VStack(alignment: .leading, spacing: 10){
                         
                         TextAndButton(text: "Получить список из контроллера",
                                       button: " Запрос ", alert: $alwaysFalse,
-                                      tapAction: {network.getConfigFromController(kButtons.kIpAddress)},
-                                      alertAction: {})
+                                      tapAction: {},
+                                      alertAction: { getConfig() })
                         
                         TextAndButton(text: "Очистить список K-Net кнопок",
                                       button: " Удалить ", alert: $kDeleteAlert,
@@ -67,7 +67,7 @@ struct SettingsView: View {
                 Spacer(minLength: 30)
                 
             }
-            Button("Применить") { confirm() }
+            //Button("Применить") { confirm() }
         }
         .padding(15)
 #if os(macOS)
@@ -76,7 +76,9 @@ struct SettingsView: View {
         
     }
     
-    func confirm () {
+    func getConfig () {
+        
+        network.getConfigFromController(kButtons.kIpAddress)
         if !network.configFromDevice.isEmpty {
             kButtons.kButtonsList = network.configFromDevice
         }

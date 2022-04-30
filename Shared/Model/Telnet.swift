@@ -23,11 +23,15 @@ final class Telnet {
             switch (newState) {
             case .ready:
                 command.forEach { item in //To send array of commands
+                    print(item)
                     self?.setCommand(item) // отправляем массив команд, ошибки не обрабатываем
                 }
                 self?.getAnswer { self?.answer = $0 }
-                sleep(1) // Если не ждать то результатом будет первое выполнение функции getAnswer, а она выполняется несколько раз
-                completion(self?.answer ?? "Пусто")
+                
+                // Если не ждать то результатом будет первое выполнение функции getAnswer, а она выполняется несколько раз
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                    completion(self?.answer ?? "Пусто")
+                }
                 
             case .setup:
                 print("State: Setup\n")
@@ -67,7 +71,11 @@ final class Telnet {
                 if let data = data, !data.isEmpty {
                     DispatchQueue.main.async {
                         guard let answer = String(data: data, encoding: .utf8) else { return }
-                        if !answer.isEmpty { completion(answer) }
+                        if !answer.isEmpty {
+                            print("Aswer: \(answer)")
+                            completion(answer)
+                            
+                        }
                         return
                     }
                 }
